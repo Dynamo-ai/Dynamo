@@ -1,0 +1,119 @@
+.findThePerfect {
+  margin: 0;
+  align-self: stretch;
+  position: relative;
+  font-size: inherit;
+  font-weight: 700;
+  font-family: inherit;
+  z-index: 1;
+}
+.exploreTheFrontier {
+  width: 546px;
+  position: relative;
+  font-size: var(--regular-p-size);
+  line-height: 24px;
+  font-family: var(--regular-p);
+  color: var(--color-darkgray-100);
+  display: inline-block;
+  max-width: 100%;
+  z-index: 1;
+}
+.findThePerfectCreditCardFParent {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-5xl);
+  min-width: 393px;
+  max-width: 100%;
+}
+.horseImage1,
+.image4Icon {
+  position: relative;
+  object-fit: cover;
+}
+.image4Icon {
+  height: 362px;
+  width: 613px;
+  display: none;
+  max-width: 100%;
+}
+.horseImage1 {
+  height: 189px;
+  width: 189px;
+  z-index: 1;
+}
+.frameParent,
+.image4Parent,
+.landingPageContent {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  max-width: 100%;
+}
+.image4Parent {
+  flex: 0.491;
+  justify-content: flex-start;
+  padding: var(--padding-127xl) var(--padding-137xl) var(--padding-8xl);
+  box-sizing: border-box;
+  background-image: url(/public/image-4@2x.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+  min-width: 398px;
+  z-index: 1;
+}
+.frameParent,
+.landingPageContent {
+  justify-content: center;
+}
+.frameParent {
+  width: 1249px;
+  gap: var(--gap-13xl);
+}
+.landingPageContent {
+  align-self: stretch;
+  padding: 0 var(--padding-xl) 0 var(--padding-10xl);
+  box-sizing: border-box;
+  flex-shrink: 0;
+  text-align: left;
+  font-size: var(--font-size-21xl);
+  color: var(--color-white);
+  font-family: var(--font-m-plus-1);
+}
+@media screen and (max-width: 1050px) {
+  .findThePerfect {
+    font-size: var(--font-size-13xl);
+  }
+  .findThePerfectCreditCardFParent,
+  .image4Parent {
+    flex: 1;
+  }
+  .frameParent {
+    flex-wrap: wrap;
+  }
+}
+@media screen and (max-width: 750px) {
+  .findThePerfectCreditCardFParent,
+  .image4Parent {
+    min-width: 100%;
+  }
+  .image4Parent {
+    padding-left: var(--padding-59xl);
+    padding-right: var(--padding-59xl);
+    box-sizing: border-box;
+  }
+  .frameParent {
+    gap: var(--gap-base);
+  }
+}
+@media screen and (max-width: 450px) {
+  .findThePerfect {
+    font-size: var(--font-size-5xl);
+  }
+  .image4Parent {
+    padding: var(--padding-76xl) var(--padding-xl) var(--padding-xl);
+    box-sizing: border-box;
+  }
+}

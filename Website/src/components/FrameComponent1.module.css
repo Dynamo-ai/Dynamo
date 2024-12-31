@@ -1,0 +1,66 @@
+.whatDoWe {
+  margin: 0;
+  position: relative;
+  font-size: inherit;
+  font-weight: 700;
+  font-family: inherit;
+  display: inline-block;
+  max-width: 100%;
+}
+.featureList,
+.features {
+  display: flex;
+  justify-content: flex-start;
+  max-width: 100%;
+}
+.featureList {
+  align-self: stretch;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  gap: var(--gap-13xl);
+  font-size: var(--font-size-5xl);
+}
+.features {
+  width: 1240px;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--gap-45xl);
+  z-index: 1;
+}
+.featuresWrapper {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 0 var(--padding-xl);
+  box-sizing: border-box;
+  max-width: 100%;
+  flex-shrink: 0;
+  text-align: left;
+  font-size: var(--font-size-21xl);
+  color: var(--color-white);
+  font-family: var(--font-m-plus-1);
+}
+@media screen and (max-width: 1050px) {
+  .whatDoWe {
+    font-size: var(--font-size-13xl);
+  }
+}
+@media screen and (max-width: 750px) {
+  .featureList {
+    gap: var(--gap-base);
+  }
+  .features {
+    gap: var(--gap-13xl);
+  }
+}
+@media screen and (max-width: 450px) {
+  .whatDoWe {
+    font-size: var(--font-size-5xl);
+  }
+  .features {
+    gap: var(--gap-base);
+  }
+}

@@ -1,0 +1,62 @@
+.documentTextIcon {
+  height: 32px;
+  width: 32px;
+  position: relative;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.f {
+  border-radius: var(--br-5xl);
+  background-color: var(--color-dimgray);
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-base);
+}
+.aiTextSearch {
+  margin: 0;
+  position: relative;
+  font-size: inherit;
+  font-weight: 500;
+  font-family: inherit;
+}
+.searchThingsIn {
+  align-self: stretch;
+  position: relative;
+  font-size: var(--regular-p-size);
+  color: var(--color-darkgray-200);
+}
+.featureDetails,
+.featureItems {
+  flex: 1;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.featureDetails {
+  flex-direction: column;
+  padding: 0 var(--padding-lg) 0 0;
+  box-sizing: border-box;
+  gap: var(--gap-5xs);
+  min-width: 198px;
+}
+.featureItems {
+  flex-direction: row;
+  gap: var(--gap-5xl);
+  min-width: 294px;
+  max-width: 100%;
+  text-align: left;
+  font-size: var(--font-size-5xl);
+  color: var(--color-white);
+  font-family: var(--font-m-plus-1);
+}
+@media screen and (max-width: 450px) {
+  .aiTextSearch {
+    font-size: var(--font-size-lgi);
+  }
+  .featureItems {
+    flex-wrap: wrap;
+  }
+}
